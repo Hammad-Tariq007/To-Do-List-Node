@@ -7,6 +7,7 @@ A minimal yet elegant **To-Do List web application** built with:
 - **EJS Templating**
 - **Custom CSS**
 
+
 This app supports:
 - ✅ **Default Home List** with preloaded tasks  
 - ✅ **Custom Lists** by visiting `/YourListName`  
@@ -62,4 +63,7 @@ Feel free to open issues or pull requests. Please keep commit messages clear and
 ## License
 
 This project is licensed under the MIT License.
+
+![Node.js](https://img.shields.io/badge/node-v18-green)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
