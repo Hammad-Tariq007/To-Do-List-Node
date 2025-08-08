@@ -51,4 +51,9 @@ This app supports:
 - Visit `/` for the default to-do list  
 - Visit `/Work` or `/Groceries` for custom lists  
 - Add tasks via the input box  
-- Delete tasks by checking the box  
+- Delete tasks by checking the box
+  
+---
+## Contributing
+
+Feel free to open issues or pull requests. Please keep commit messages clear and meaningful.
