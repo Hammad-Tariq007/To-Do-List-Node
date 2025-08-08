@@ -57,3 +57,9 @@ This app supports:
 ## Contributing
 
 Feel free to open issues or pull requests. Please keep commit messages clear and meaningful.
+
+---
+## License
+
+This project is licensed under the MIT License.
+
