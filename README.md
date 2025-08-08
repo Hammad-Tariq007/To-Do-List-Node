@@ -38,3 +38,9 @@ This app supports:
 - **Others:** Body-parser, Custom Date module
 
 ---
+## Installation
+
+1. Clone the repo  
+2. Run `npm install`  
+3. Start MongoDB locally  
+4. Run `node app.js`  
