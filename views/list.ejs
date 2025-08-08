@@ -1,0 +1,42 @@
+<%- include('header'); -%>
+<body>
+  <div class="container">
+    <h1 class="main-heading"><%= listTitle %></h1>
+    <h2 class="sub-heading">List of Items:</h2>
+
+    <ul class="todo-list">
+      <% items.forEach(function(item) { %>
+        <li class="todo-item">
+          <form action="/delete" method="POST" class="delete-form">
+            <label class="custom-checkbox">
+              <input type="checkbox" class="checkbox" onChange="this.form.submit()" />
+              <span class="checkmark"></span>
+              <span class="item-text"><%= item.name %></span>
+            </label>
+            <!-- Hidden fields so server knows what to delete -->
+            <input type="hidden" name="itemId" value="<%= item._id %>">
+            <input type="hidden" name="list" value="<%= listTitle %>">
+          </form>
+        </li>
+      <% }) %>
+    </ul>
+
+    <!-- Add new item -->
+    <form action="/" method="POST" class="todo-form">
+      <input type="text" name="newItem" placeholder="New item..." class="todo-input" required />
+      <input type="hidden" name="list" value="<%= listTitle %>">
+      <button type="submit" class="todo-button">Add</button>
+    </form>
+  </div>
+
+  <script>
+    // Toggle completed class visually (does not affect DB)
+    document.querySelectorAll('.checkbox').forEach((checkbox) => {
+      checkbox.addEventListener('change', function () {
+        const text = this.closest('.custom-checkbox').querySelector('.item-text');
+        text.classList.toggle('completed');
+      });
+    });
+  </script>
+</body>
+</html>

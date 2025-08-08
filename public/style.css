@@ -1,0 +1,145 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f8;
+    color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container */
+  .container {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 480px;
+  }
+  
+  /* Headings */
+  .main-heading {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    text-align: center;
+  }
+  
+  .sub-heading {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* List */
+  .todo-list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+  }
+  
+  .todo-item {
+    margin-bottom: 10px;
+  }
+  
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #f0f2f5;
+    padding: 12px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .custom-checkbox:hover {
+    background-color: #e2e6ea;
+  }
+  
+  .checkbox {
+    display: none;
+  }
+  
+  .checkmark {
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    border: 2px solid #007bff;
+    position: relative;
+    transition: background-color 0.2s ease;
+  }
+  
+  .checkbox:checked + .checkmark {
+    background-color: #007bff;
+  }
+  
+  .checkbox:checked + .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Item Text */
+  .item-text {
+    font-size: 1rem;
+    transition: color 0.2s, text-decoration 0.2s;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  /* Form */
+  .todo-form {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .todo-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.2s ease;
+  }
+  
+  .todo-input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .todo-button {
+    padding: 0.75rem 1.25rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .todo-button:hover {
+    background-color: #0056b3;
+  }
+
+  
