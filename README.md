@@ -43,4 +43,12 @@ This app supports:
 1. Clone the repo  
 2. Run `npm install`  
 3. Start MongoDB locally  
-4. Run `node app.js`  
+4. Run `node app.js`
+   
+---
+## Usage
+
+- Visit `/` for the default to-do list  
+- Visit `/Work` or `/Groceries` for custom lists  
+- Add tasks via the input box  
+- Delete tasks by checking the box  
