@@ -28,7 +28,7 @@ This app supports:
 - ➕ Add new tasks easily
 - ❌ Delete tasks by checking the box
 - 🛡 MongoDB-backed persistent storage
-- 🎨 Styled with CSS for a modern look
+- 🎨 Styled with CSS for a modern sleek look
 
 ---
 
